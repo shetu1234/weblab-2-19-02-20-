@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>slide show</title>
+  <link rel="stylesheet"  href="styles1.css"/>
+</head>
+<body>
+<header>
+   <div class="logo">
+        <img width="130px;"src=https://www.freelogodesign.org/file/app/client/thumb/89a107af-19d1-483d-879b-d6143d055380_200x200.png?1581790170653
+alt=""/>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Client</a></li>
+            <li><a href="">Contact</a></li>
+			<li><a href="">Other</a></li>
+        </ul>
+    </nav>
+    <div class="trigger-main">
+         <a href="#" class="hamBurger">
+              <span class="one"></span>
+             <span class="two"></span>
+			 <span class="three"></span>
+        </a>
+    </div>
+	 </header>
+ 
+      <div class="cover-content">
+         <span class="color-change"><marquee>WELCOME TO OUR...GAMESHOW</marquee></span> 
+		  <div class="container">
+      <div id="home" class="flex-center flex-column">
+		 
+		  <a class="btn" href="./index1.html"><b>Let's Go</b></a>
+		  </div>
+		  </div>
+     </div> 
+	     <script src="script.js"></script>
+	 <footer>
+    <p>Contact us kaniz15-8947@diu.edu.bd</p>
+    </div>	
+  </div>
+  <script> const hamBurger=document.querySelector(".hamBurger");
+         const nav=document.querySelector("nav");
+         hamBurger.addEventListener("click",function() {
+         nav.classList.toggle("open");
+         hamBurger.classList.toggle("close")
+      })
+	 
+ </script>
+ 
+ </body>
+</html>

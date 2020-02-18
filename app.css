@@ -1,0 +1,123 @@
+:root {
+    background-image:linear-gradient(#00000050,#00000056),
+linear-gradient(#00000050,#00000050), url("cover1.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 2px 4px 10px;
+    border-radius: 5px;
+color:white;
+ 
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+h1 {
+  font-size: 5.4rem;
+  color: #56a5eb;
+  margin-bottom: 5rem;
+}
+
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+    color: #56a5eb;
+}
+
+h3 {
+	  color: #56a5eb;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+h4{
+	  color: #56a5eb;
+  font-size:6rem;
+  font-weight: 500;
+  text-align:center;
+}
+
+/* UTILITIES */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+.container > * {
+  width: 100%;
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* BUTTONS */
+.btn,.btn1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+}
+.btn1{
+	
+  background-color: Tomato;	
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.btn1:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.color-change{
+    animation: colorChange 2s infinite;
+}
+@keyframes colorChange{
+    0%{color: yellow;}
+    25%{color: orangered;}
+    50%{color: tomato;}
+    75%{color: turquoise;}
+    100%{color: yellow;}
+}
+
+
+
+
+
