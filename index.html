@@ -5,7 +5,9 @@
 <title>slide show</title>
   <link rel="stylesheet"  href="styles1.css"/>
 </head>
-<body>
+<body onload="myFunction()" style="color: orange;font-size: 30px;background-color: #282828;"> 
+ <p id="text" style="text-align: center;"></p>
+ </body>
 <header>
    <div class="logo">
         <img width="130px;"src=https://www.freelogodesign.org/file/app/client/thumb/89a107af-19d1-483d-879b-d6143d055380_200x200.png?1581790170653
@@ -39,7 +41,7 @@ alt=""/>
 		  </div>
 		  </div>
      </div> 
-	     <script src="script.js"></script>
+	     
 	 <footer>
     <p>Contact us kaniz15-8947@diu.edu.bd</p>
     </div>	
@@ -52,6 +54,17 @@ alt=""/>
       })
 	 
  </script>
+	 <script>
+        let showQuotes = document.querySelector('#text')
+        let quotes = ['A problem is a chance for you to do your best.','Change your thoughts and you change your world.',
+        'Life can only be understood backwards; but it must be lived forwards.','It always seems impossible until its done.']
+       
+       
+       
+        let random = Math.floor(Math.random() * 4);
+        function myFunction(){
+            showQuotes.innerHTML= quotes[random];
+        }
+    </script>
  
- </body>
 </html>
